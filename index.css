@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #333333;
+    color: #fff;
+    /*padding-top: 30px;*/
+    min-height: 70px;
+    /*border-bottom: #6ca2ff 3px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+/* Section de présentation */
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url('bg_bggenerator_com.png');
+}
+
+.content_presentation {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #70ABAF;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.content_presentation h2 {
+    margin-bottom: auto;
+    font-size: 2em;
+}
+.content_presentation h3 {
+    margin-bottom: auto;
+}
+.content_presentation h4 {
+    margin-bottom: auto;
+}
+.content_presentation p {
+    margin-bottom: auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: justify;
+}
+
+
+/* Compétences */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section h2 {
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.section h3 {
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.sub_section {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.stage_3e {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+#cdi {
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: justify;
+}
+
+/*.formation {
+    padding-right: 60px;
+    padding-left: 60px;
+}*/
+
+/* Main Content */
+main {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pdi {
+    border-radius: 35px;
+}
+
+
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /*margin-top: 20px;*/
+    border-top: #77aaff 3px solid;
+}
+
+footer p {
+    margin: 0;
+}

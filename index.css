@@ -34,7 +34,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url('bg_bggenerator_com.png');
+    background-image: url('img/bg_bggenerator_com.png');
 }
 
 .content_presentation {
@@ -103,7 +103,12 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
+    background-color: #99E1D9;
+    padding: 3%;
+    padding-top: 1.5%;
+    margin: 3%;
+    margin-top: 3.5%;
+    border-radius: 35px;
 }
 
 .stage_3e {
@@ -117,10 +122,13 @@ header {
     text-align: justify;
 }
 
-/*.formation {
-    padding-right: 60px;
-    padding-left: 60px;
-}*/
+.formation {
+    margin-top: auto;
+}
+.formation h3 {
+    padding-bottom: 5px;
+
+}
 
 /* Main Content */
 main {

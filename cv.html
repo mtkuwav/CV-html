@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,26 +95,40 @@
                 <p id="cdi">Étant un grand passionné de musique, je suis devenu avec le temps un véritable expert dans l'extraction de CDs audio, notamment grâce au logiciel <a href="https://www.exactaudiocopy.de/en/">Exact Audio Copy</a>. Je suis également DJ et photographe amateur.</p>
             </div>
         </div>
-        <form>
-            <h4>Vous souhaitez me contacter ?</h4>
-            <div>
-                <label for="nom">Entrez votre nom</label>
-                <input type="text" name="nom" required>
-            </div>
-            <div>
-                <label for="prenom">Entrez votre prénom</label>
-                <input type="text" name="prenom" required>
-            </div>
-            <div>
-                <label for="email">Entrez votre email</label>
-                <input type="email" name="email" required>
-            </div>
-            <div>
-                <input type="submit" value="Envoyer :D">
-            </div>
-        </form>
+
+        <div class="separator">
+            <hr>
+        </div>
+
+        <div class="contact-section">
+            <form class="contact-form">
+                <h3>Vous souhaitez me contacter ?</h3>
+                <div class="form-group">
+                    <label for="nom">Entrez votre nom :</label>
+                    <input type="text" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Entrez votre prénom :</label>
+                    <input type="text" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Entrez votre email :</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Entrez votre message :</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+
     </body>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact : <a href="mailto:mathieu.chauvet@coda-student.school">Mon mail</a></p>
+        <p>Copyright © Mathieu CHAUVET 2024</p>
     </footer>
 </html>

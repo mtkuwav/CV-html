@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F0F7F4;
+    color: #32292F;
 }
 
 h2 {
@@ -13,17 +13,49 @@ h2 {
     text-align: center;
 }
 
-/* Header */
 header {
     background: #333333;
     color: #fff;
-    /*padding-top: 30px;*/
     min-height: 70px;
-    /*border-bottom: #6ca2ff 3px solid;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
+main {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /*margin-top: 20px;*/
+    border-top: #77aaff 3px solid;
+}
+
+footer p {
+    margin: 0;
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 4%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 75%;
+}
+
 
 
 
@@ -62,6 +94,12 @@ header {
     margin-bottom: auto;
 }
 
+#pdi {
+    border-radius: 35px;
+}
+
+
+/* Section d'introduction */
 .intro {
     display: flex;
     flex-direction: column;
@@ -74,7 +112,20 @@ header {
 }
 
 
-/* Compétences */
+/* Section compétences */
+.hard_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #99E1D9;
+    padding: 3%;
+    padding-top: 1.5%;
+    margin: 3%;
+    margin-top: 3.5%;
+    border-radius: 35px;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -98,68 +149,112 @@ header {
     justify-content: space-between;
 }
 
-.hard_skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #99E1D9;
-    padding: 3%;
-    padding-top: 1.5%;
-    margin: 3%;
-    margin-top: 3.5%;
-    border-radius: 35px;
+.sub-sub_section {
+    background-color: #C5ECE7;
+    padding : 3%;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.sub-sub_section:hover {
+    transform: scale(1.1);
+}
+
+/* Section formation */
+.formation {
+    margin-top: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.formation h3 {
+    padding-bottom: 5px;
+}
+
+.formation:hover {
+    transform: scale(1.1);
+}
 .stage_3e {
     padding-left: 9%;
     padding-right: 9%;
 }
 
+/* Section centres d'intérêt */
 #cdi {
     padding-left: 9%;
     padding-right: 9%;
     text-align: justify;
 }
 
-.formation {
-    margin-top: auto;
-}
-.formation h3 {
-    padding-bottom: 5px;
 
-}
-
-/* Main Content */
-main {
+/* Section contact */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    background: #fff;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#pdi {
+    background-color: #88f4e7;
+    margin: 3%;
     border-radius: 35px;
 }
 
-
-
-
-p {
-    margin: 0;
-    padding: 0;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #F0F7F4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
+.contact-form h3 {
     text-align: center;
-    padding: 10px 0;
-    /*margin-top: 20px;*/
-    border-top: #77aaff 3px solid;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-footer p {
-    margin: 0;
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center; /* Keep labels aligned to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-left: 8%;
+    text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin: 0 auto;
+}
+
+.form-group input[type="submit"] {
+    background-color: #70ABAF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #5a8a8d;
+}
+
+#msg {
+    height: 100px;
 }

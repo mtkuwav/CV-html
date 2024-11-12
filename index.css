@@ -96,6 +96,8 @@ hr {
 
 #pdi {
     border-radius: 35px;
+    max-width: 25%;
+    height: auto;
 }
 
 
@@ -113,6 +115,17 @@ hr {
 
 
 /* Section compétences */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hard_skills {
     display: flex;
     flex-direction: column;
@@ -124,6 +137,7 @@ hr {
     margin: 3%;
     margin-top: 3.5%;
     border-radius: 35px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .section {
@@ -146,7 +160,7 @@ hr {
 .sub_section {
     display : flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .sub-sub_section {
@@ -257,4 +271,73 @@ hr {
 
 #msg {
     height: 100px;
+}
+
+
+
+@media (max-width: 600px) {
+    .formation {
+        margin-top: 20px;
+    }
+    .stage_3e, #cdi {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .formation h3 {
+        padding-bottom: 10px;
+    }
+
+    .form-group label {
+        padding-left: 5%;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+    width: 90%;
+    }
+
+    .intro {
+        margin-bottom: 10%;
+    }
+
+    .sub_section {
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        border-style: solid;
+        border-color: #99E1D9;
+        border-width: 1px;
+    }
+
+    .competences {
+        padding-left: 5%;
+        padding-right: 5%;
+        animation: fadeIn 10s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .presentation {
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column;
+    }
+    #pdi {
+        border-radius: 25px;
+        min-height: 360px;
+        min-width: 240px;
+    }
+    .content_presentation {
+        padding: 10px;
+        border-radius: 25px;
+    }
 }
